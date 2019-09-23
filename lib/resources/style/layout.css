@@ -10,6 +10,11 @@
     flex-grow: 1;
     border:solid 1px #CCC;
 }
+.overlapped {
+    position: absolute;
+    margin-left: 200px;
+    z-index: 3;
+}
 .select_button {
     color: #567EBC;
     font-size: 12px;
