@@ -1,17 +1,17 @@
 <html>
   <head>
     <script src="jsmind.js"></script>
+    <script src="data/tree.js"></script>
     <link type="text/css" rel="stylesheet" href="style/jsmind.css" />
     <link type="text/css" rel="stylesheet" href="style/jsmind_custom.css" />
     <link type="text/css" rel="stylesheet" href="style/layout.css" />
-    <script src="data/tree.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div id="key" class="in-place">
+    <div>
+      <div id="key" class="key">
         <img src="graph-viewer-key.png" alt="Graph Viewer Key" width="50%"/>
       </div>
-      <div id="jsmind_container" class="flex-item"></div>
+      <div id="jsmind_container" class="graph"></div>
     </div>
     
     <script src="sketch.js"></script>
@@ -30,6 +30,10 @@
       jm.view.__proto__.show_lines = showLines;
 
       render(0, jm, mindTree);
+
+      window.addEventListener("message", (event) => {
+        render(event.data, jm, mindTree);
+      });
     </script>
   </body>
 </html>

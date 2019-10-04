@@ -1,11 +1,7 @@
-.container {
-    display: flex;
-}
-.flex-item {
-    flex-grow: 1;
+.graph {
     border:solid 1px #CCC;
 }
-.in-place {
+.key {
     position: absolute;
     z-index: 3;
 }
@@ -13,6 +9,7 @@
     color: #567EBC;
     font-size: 12px;
     font-family: Verdana,Arial,Helvetica,sans-serif;
+    white-space: nowrap;
 }
 .select_button:hover {
     text-decoration: underline;
