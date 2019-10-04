@@ -1,18 +1,12 @@
 .container {
     display: flex;
 }
-.fixed {
-    width: 200px;
-    min-height: 800px;
-    border:solid 1px #CCC;
-}
 .flex-item {
     flex-grow: 1;
     border:solid 1px #CCC;
 }
-.overlapped {
+.in-place {
     position: absolute;
-    margin-left: 200px;
     z-index: 3;
 }
 .select_button {
